@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Outlander</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Lato" rel="stylesheet">
+</head>
+
+<body>
+	<a href="index.html"><header><!-- The whole header links back to the landing page. -->
+		<h1><span id="initial">O</span>utlander</h1>
+		<hr>
+		<h2>Created by Diana Gabaldon</h2>
+	</header></a>
+
+	<div class="parallax">
+	<div class="transparent"> <!-- This was the only way I could think of to fade the background image so that the text could be more readable. -->
+
+		<p class="synopsis">The Outlander franchise consists of a core book series, related novellas and comics, and a Starz television adaptation. At its heart, its main character is Claire Randall, a 20th century English nurse. At the series’s start, Claire and her husband Frank are on their second honeymoon in Scotland, celebrating their reunion now that World War II has ended, and looking forward to settling into a life together. Mysteriously, however, she seems to stumble through a hole in time and finds herself in Scotland 200 years earlier, at the height of Highlander culture. In trying to navigate her surroundings and stay alive in a land not friendly to English citizens, she is torn between two husbands - one in 1946 and one in 1743, on the precipice of an attempted revolution that would end Highland life for the people she has come to love.</p> <!-- Seriously, it's so good. I'm excited about the story all over again just summarizing it. -->
+
+		<div class="book-show"><!-- The image and text area both link to the appropriate page. -->
+			<a href="pages/books.html"><figure>
+				<img src="images/outlanderbookcover.jpeg" alt="Book cover for Outlander #1">
+				<figcaption>Book series</figcaption>
+			</figure></a>
+			<a href="pages/show.html"><figure>
+				<img src="images/outlandertitlecard.jpeg" alt="Title card for the Outlander TV show">
+				<figcaption>TV series</figcaption>
+			</figure></a>
+		</div>
+
+		<div class="author-info">
+			<h4>About the author:</h4>
+			<p>Diana Gabaldon is from Arizona, and had never been to Scotland before beginning to write about it. She has a B.S. in Zoology, a M.S. in Marine Biology, and a Ph.D. in Quantitative Behavioral Ecology, and was a university professor with an expertise in scientific computation before she became a writer. She is a Co-Producer and advisor for the Starz network television adaptation of <em>Outlander</em>.</p>
+		</div>
+
+			<!-- MODAL ... this is the worst and i hate it-->
+		<a href="#openmodal" class="openmodal">Sign up for our newsletter!</a>
+		<div id="openmodal" class="modaldialog">
+			<div>
+				<a href="#close" class="close">X</a>
+				<h2>Welcome</h2>
+				<p>This is a fan-made page for the Outlander series, with information sourced from Wikipedia and from Diana Gabaldon's blog.</p>
+				<input type="email" placeholder="Your email">
+				<input type="submit">
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
+
+<!-- Requirements:
+Comments for organizational purposes.
+Use a CSS Modal.
+cast info
+image alts -->

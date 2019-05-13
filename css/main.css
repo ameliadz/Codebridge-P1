@@ -1,0 +1,325 @@
+body, html {
+	height: 100%;
+}
+body {
+	font-family: Lato, sans-serif;
+	margin: 0;
+}
+
+header {
+	text-align: center;
+	color: rgb(22, 132, 33);
+	font-family: Cinzel, serif;
+	background-color: rgb(58, 61, 58);
+	padding-bottom: 2px;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	margin: 0 auto;
+	font-size: 50px;
+	font-weight: 600;
+	animation: change 10s ease-in-out 1; /* It shifts the positioning of my text ever so slightly... can that be changed? */
+}
+#initial { /* capital O in Outlander header */
+	font-size: 60px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+hr {
+	margin: 0;
+	padding: 0;
+}
+h2 { /* author name */
+	margin-top: 10px;
+	font-size: 25px;
+}
+
+.parallax {
+	background-image: url("../images/craigh-na-dun.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+}
+.transparent {
+	background-color: rgba(255, 255, 255, 0.7);
+	max-width: 90%;
+	margin: 0 auto;
+	border-left: 5px double white;
+	border-right: 5px double white;
+}
+
+p {
+	line-height: 23px;
+	font-size: 17px;
+	text-align: justify;
+}
+.synopsis {
+	padding-top: 10px;
+	width: 75%;
+	margin: 0 auto 30px auto;
+}
+
+.book-show { /* The part of the landing page that provides links to either the page about the books or the page about the show. */
+	display: flex;
+	max-width: 75%;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.book-show img {
+	flex: 50%;
+	border: 3px solid rgb(22, 132, 33);
+}
+.book-show figcaption {
+	text-align: center;
+	color: black;
+}
+
+.author-info {
+	width: 75%;
+	margin: 0 auto;
+}
+h4 { /*about the author*/
+	text-transform: uppercase;
+	margin: 20px auto 0 auto;
+	text-decoration: underline;
+	font-size: 20px;
+}
+.author-info p {
+	margin-top: 5px;
+}
+
+h3 { /*secondary pages headings*/
+	text-align: center;
+	padding-top: 20px;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.allbooks {
+	display: block;
+	margin: 10px auto 20px auto;
+	max-width: 80%;
+	max-height: 250px;
+	border: 3px solid rgb(22, 132, 33);
+}
+.booklist { /*Total parent container for the book lists*/
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	display: flex;
+}
+.list { /*The lists side by side*/
+	flex: 1;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+.listheading {
+	margin: 0 30px 6px 30px;
+	text-decoration: underline;
+	font-size: 20px;
+}
+ol {
+	margin-top: 0;
+	margin-left: 15px;
+	font-size: 15px;
+}
+ul.explanation {
+	margin-left: 0px;
+	font-size: 15px;
+}
+.title {
+	font-size: 17px;
+	font-style: italic;
+}
+.title2 {
+	font-size: 17px;
+}
+.year {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+}
+.asterisk {
+	font-size: 15px;
+}
+.related {
+	margin: 0 auto 20px auto;
+	margin-left: 15px;
+}
+
+.show-overview { /*entire section with text, table, and poster*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 75%;
+	margin: 5px auto 15px auto;
+	text-align: center;
+}
+#table { /*just table and introductory text*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.show-overview p {
+	text-align: justify;
+	line-height: 23px;
+	line-height: 23px;
+	font-size: 17px;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	max-width: 600px;
+}
+table {
+	border: 2px solid rgb(22, 132, 33);
+	border-collapse: collapse;
+	padding: 5px;
+}
+td, th {
+	border: 1px solid rgb(22, 132, 33);
+	padding: 3px;
+	font-size: 17px;
+}
+th {
+	text-transform: uppercase;
+}
+img.show-overview {
+	border: 3px solid rgb(22, 132, 33);
+	max-height: 400px;
+	max-width: 300px;
+}
+div.cast {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 80%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+.castlist {
+	font-size: 15px;
+}
+p.cast{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+ul.cast {
+	margin-top: 0;
+	padding-top: 0;
+}
+img.cast {
+	max-width: 300px;
+	max-height: 250px;
+	margin: 2px;
+	padding: 0;
+}
+.cast figcaption {
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+iframe {
+	display: block;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	max-width: 75%;
+	max-height: auto;
+}
+.video {
+	padding-bottom: 20px;
+}
+.video p {
+	width: 75%;
+	margin: 0 auto;
+}
+.openmodal {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	color: black;
+	padding-bottom: 20px;
+}
+.modaldialog {
+	position: fixed;
+	font-family: Lato, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 1;
+	opacity: 0; /* honestly, I don't know why this is important, but it breaks without it, so I guess it's important*/
+	pointer-events: none;
+}
+.modaldialog h2 {
+	font-family: Cinzel, serif;
+	color: rgb(22, 132, 33);
+	text-shadow: 1px 1px 2px gray;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+.modaldialog p {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+input[type="email"] {
+	border: 1px solid rgb(58, 61, 58);
+	font-family: Lato, sans-serif;
+	text-align: center;
+}
+input[type="submit"] {
+	background: rgb(22, 132, 33);
+	color: white;
+	font-family: Lato, sans-serif;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.modaldialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+.modaldialog > div {
+	position: relative;
+	width: 400px;
+	margin: 10% auto;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: white;
+}
+.close {
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	width: 25px;
+	background: rgb(22, 132, 33);
+	color: white;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 1px 1px 3px black;
+}
+.close:hover {
+	background: rgb(58, 61, 58);
+}
+@keyframes change {
+	0% {
+		text-shadow: none;
+	}
+	50% {
+		text-shadow: 1px 1px 3px white;
+	}
+	100% {
+		text-shadow: none;
+	}
+}
